@@ -1,0 +1,149 @@
+@import url('https://font.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --prymary-color:#D3A7F2;
+    --background-color:#f9f5f0;
+    --dark-color:#151515;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins',sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.heading-1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+}
+.container-hero{
+    background-color: var(--prymary-color);
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+
+}
+.customer-support{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.customer-support i{
+    font-size: 3.3rem;
+}
+.cotent-cutomer-support{
+    display: flex;
+    flex-direction: column;
+
+}
+.container-logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.container-logo h1 a{
+    text-decoration: none;
+    color: #000;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.container-user{
+    display:flex ;
+    gap: 1rem;
+    cursor: pointer;
+    
+}
+.container-user.fa-user{
+    font-size: 3rem;
+    color:var(--prymary-color);
+    padding-right: 2.5rem;
+    border-right: 1px solid #e2e2e2;
+
+
+}
+.container-user.fa-basket-shopping{
+    font-size: 3rem;
+    color: var(--prymary-color);
+    padding-left: 1rem;
+}
+.content-shopping-cart{
+    display: flex;
+    flex-direction: column;
+}
+.container-navbar{
+    background-color: var(--prymary-color);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+}
+.navbar.fa-bars{
+    display: none;
+}
+.banner{
+    background-image: url('imagenes/stops.jpg');
+    height: 60rem;
+    background-size:cover;
+    background-position: center;
+}
+.content-banner{
+    max-width: 90rem;
+    margin:0 auto;
+    padding: 25rem 0;
+}
+.content-banner p{
+    color: var(--prymary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.content-banner h2{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.content-banner a{
+    margin: 2rem;
+    text-decoration: none;
+    color: #fff;
+    background-color:var(--prymary-color) ;
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+}
+.content-card-product{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:repeat(2,min-content);
+    row-gap: 1rem;
+}
+
+   .starts i{
+    display:column;
+    justify-items: center; 
+    font-size: 2rem;
+    color: var(--prymary-color);
+    
+
+}
+
+.content-card-product h3:hover{
+    color: var(--prymary-color);
+}

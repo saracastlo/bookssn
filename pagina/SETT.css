@@ -1,0 +1,80 @@
+@import url('https://font.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --prymary-color:#D3A7F2;
+    --background-color:#f9f5f0;
+    --dark-color:#151515;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins',sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.heading-1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+}
+.container-hero{
+    background-color: var(--prymary-color);
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+
+}
+.customer-support{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.customer-support i{
+    font-size: 3.3rem;
+}
+.cotent-cutomer-support{
+    display: flex;
+    flex-direction: column;
+
+}
+.container-logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.container-logo h1 a{
+    text-decoration: none;
+    color: #000;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+section{
+    align-items: center;
+    display: flex;
+    width: 1000px;
+    height: 500px;
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+
+}
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
